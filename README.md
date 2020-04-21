@@ -12,9 +12,9 @@ Click above for a zip file containing the app for those who do not wish to build
 ### Instructions
 
     run "npm install" to install all the dependencies
-    for Windows: run "npm start package-win"
-    for MacOS: run "npm start package-mac"
-    for Linux: run "npm start package-linux"
+    for Windows: run "npm run package-win"
+    for MacOS: run "npm run package-mac"
+    for Linux: run "npm run package-linux"
 
 ##### This app was created using:
 
