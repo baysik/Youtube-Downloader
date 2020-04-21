@@ -5,9 +5,9 @@ It is exactly what it sounds like. You input a youtube video URL and click downl
 
 ### Download Link
 
-##### [click here](https://drive.google.com/open?id=1_dPvXN_BG71OUTmXXIYOLJ4IQh0A_r5W)
+##### [Google Drive](https://drive.google.com/open?id=1_dPvXN_BG71OUTmXXIYOLJ4IQh0A_r5W)
 
-for a zip file containing the app for those who do not wish to build it themselves.
+Click above for a zip file containing the app for those who do not wish to build it themselves.
 
 ### Instructions
 
