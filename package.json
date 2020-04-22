@@ -3,20 +3,40 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "repository": "git@github.com:baysik/Youtube-Downloader.git",
+  "author": "baysik",
+  "license": "MIT",
+  "build": {
+    "appId": "com.youtube-downloader.ElectronTest",
+    "asar": "false",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "publish": [
+        {
+          "owner": "baysik",
+          "repo": "Youtube-Downloader",
+          "provider": "github"
+        }
+      ]
+    }
+  },
   "scripts": {
     "start": "electron main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . Youtube Downloader --overwrite --asar=false --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Youtube Downloader\"",
-    "package-linux": "electron-packager . Youtube Downloader --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+    "publish": "build -p always",
+    "release": "electron-builder -p onTag"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "electron": "^8.2.3",
-    "electron-packager": "^14.2.1"
+    "electron-builder": "^22.5.1"
   },
   "dependencies": {
+    "electron-log": "^4.1.1",
+    "electron-updater": "^4.2.5",
     "youtube-dl": "^3.0.2"
   }
 }
