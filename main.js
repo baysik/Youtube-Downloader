@@ -29,7 +29,7 @@ function createWindow() {
   Menu.setApplicationMenu(mainMenu);
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 }
 
 // handle add window
@@ -88,6 +88,7 @@ template = [
         label: "Set Save Directory",
         click() {
           setSaveDirectory();
+          console.log(app.getPath("userData"));
         },
       },
       // {
