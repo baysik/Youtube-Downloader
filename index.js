@@ -6,8 +6,8 @@ const youtubedl = require("youtube-dl");
 document
   .getElementById("download-button")
   .addEventListener("click", function () {
-    document.getElementById("download-button").style.visibility = "hidden";
-    document.getElementById("downloading").style.visibility = "visible";
+    document.getElementById("download-button").style.display = "none";
+    document.getElementById("downloading").style.display = "block";
     let youtubelink = document.getElementById("youtube-link").value;
     console.log(youtubelink);
     const video = youtubedl(
@@ -25,7 +25,12 @@ document
       console.log("size: " + info.size);
       video.pipe(fs.createWriteStream(`./output/${info.title}.mp4`));
       console.log("done");
-      document.getElementById("downloading").style.visibility = "hidden";
-      document.getElementById("download-button").style.visibility = "visible";
+      document.getElementById("downloading").style.display = "none";
+      document.getElementById("download-button").style.display = "block";
+      document.querySelector(".download-alert").style.display = "block";
+
+      setTimeout(function () {
+        document.querySelector(".download-alert").style.display = "none";
+      }, 3000);
     });
   });

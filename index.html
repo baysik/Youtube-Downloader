@@ -16,31 +16,41 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <style>
-      #downloading {
-        visibility: hidden;
-      }
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
     </style>
   </head>
   <body>
-    <h1>Youtube Downloader</h1>
-    <input
-      class="form-control"
-      type="text"
-      placeholder="Default input"
-      id="youtube-link"
-    />
-    <button type="button" class="btn btn-info" id="download-button">
-      Download
-    </button>
-    <button class="btn btn-primary" id="downloading" type="button" disabled>
-      <span
-        class="spinner-border spinner-border-sm"
-        role="status"
-        aria-hidden="true"
-      ></span>
-      Downloading...
-    </button>
+    <h1>Youtube</h1>
+    <h1>Downloader</h1>
+    <form class="flex">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="https://www.youtube.com/watch?v="
+        id="youtube-link"
+      />
+      <button type="button" class="btn btn-info" id="download-button">
+        Download
+      </button>
+      <button class="btn btn-primary" id="downloading" type="button" disabled>
+        <span
+          class="spinner-border spinner-border-sm"
+          aria-hidden="true"
+          role="status"
+        ></span>
+        Downloading...
+      </button>
+    </form>
+    <div class="download-alert">
+      <h5 id="alert-header">Download finished!</h5>
+      <p>Feel free to close the program or enter another link!</p>
+    </div>
+
     <!-- Optional JavaScript -->
     <script src="index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

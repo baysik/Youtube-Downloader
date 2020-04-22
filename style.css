@@ -1,0 +1,29 @@
+body {
+  background-color: #323639;
+  margin: 5%;
+}
+
+#downloading {
+  display: none;
+  font-size: 6px;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  color: whitesmoke;
+}
+
+#alert-header {
+  margin-top: 5%;
+}
+
+.download-alert {
+  text-align: center;
+  color: whitesmoke;
+  display: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
