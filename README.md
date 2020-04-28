@@ -11,8 +11,8 @@ To download please go to the [releases](https://github.com/baysik/Youtube-Downlo
 
 ##### This app was created using:
 
-ElectronJS
-electron-updater
-electron-store
-youtube-dl
-Bootstrap 4
+- ElectronJS
+- electron-updater
+- electron-store
+- youtube-dl
+- Bootstrap 4
